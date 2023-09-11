@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <style>
+        body{
+            background-color: pink;
+            padding:40px;
+            font-family:Arial, Helvetica, sans-serif;
+            line-height: 1.6rem;
+        }
+        .accordian{
+            background-color: #fff;
+            padding: 4px 16px;
+            margin-bottom: 16px;
+            border-radius: 4px;
+            box-shadow: 1px 1px 5px rgb(253, 92, 119);
+            cursor: pointer;
+        }
+        .question{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .icon{
+            margin-right: 16px;
+            transition: 0.2s;
+        }
+        .icon.active{
+            transform: rotate(-180deg);
+        }
+        .answer{
+            color: rgb(44, 44, 44);
+             max-height: 0;
+             overflow: hidden;
+             transition: 0.3s;
+        }
+        .answer.active{
+            max-height: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <h2>FAQ's</h2>
+    <div class="accordian">
+        <div class="question">
+            <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+            <i class='icon bx bxs-down-arrow'></i>
+        </div>
+        <div class="answer">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas deleniti voluptate veritatis maxime, facilis amet, quibusdam molestiae facere, est vero. Deleniti repellendus possimus quos eum eaque ut quaerat rerum, odio quae placeat sed similique corporis ratione! Sequi, in. Hic.</p>
+        </div>
+    </div>
+    <div class="accordian">
+        <div class="question">
+            <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+            <i class='icon bx bxs-down-arrow'></i>
+        </div>
+        <div class="answer">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas deleniti voluptate veritatis maxime, facilis amet, quibusdam molestiae facere, est vero. Deleniti repellendus possimus quos eum eaque ut quaerat rerum, odio quae placeat sed similique corporis ratione! Sequi, in. Hic.</p>
+        </div>
+    </div>
+    <div class="accordian">
+        <div class="question ">
+            <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+            <i class='icon bx bxs-down-arrow'></i>
+        </div>
+        <div class="answer">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas deleniti voluptate veritatis maxime, facilis amet, quibusdam molestiae facere, est vero. Deleniti repellendus possimus quos eum eaque ut quaerat rerum, odio quae placeat sed similique corporis ratione! Sequi, in. Hic.</p>
+        </div>
+    </div>
+   
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
